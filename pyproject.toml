@@ -8,6 +8,9 @@ authors = ["AndrewGlago <andrewglago1@gmail.com>"]
 python = "^3.8"
 click = "^8.0.1"
 validators = "^0.18.2"
+requests = "^2.26.0"
+asn1crypto = "^1.4.0"
+oscrypto = "^1.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
