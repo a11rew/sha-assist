@@ -8,8 +8,9 @@
 
 Usage: sha-assist.py [OPTIONS]
 
-Options:
--d, --domain TEXT Domain URL to be fingerprinted (eg. https://www.github.com)
-[required]
+| Options                   | Description                                                        |
+| ------------------------- | ------------------------------------------------------------------ |
+| -d or --domain [required] | [Text] Domain URL to be fingerprinted (eg. https://www.github.com) |
+| -p, --port [optional]     | [Integer] Port to establish connection on. Defaults to 443         |
+
 **URL must be prefixed with https://**
--p, --port INTEGER HTTPS port (Defaults to 443)
