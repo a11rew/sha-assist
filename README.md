@@ -1,6 +1,6 @@
 # SHA Assistant
 
-## Provides SHA1, SHA256, SHA384, and SHA512 fingerprints of domains
+## Easy SHA1, SHA256, SHA384, and SHA512 HTTPS domain fingerprinting.
 
 ## Syntax
 
