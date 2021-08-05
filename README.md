@@ -2,11 +2,11 @@
 
 ## Easy SHA1, SHA256, SHA384, and SHA512 HTTPS domain fingerprinting\*\*.
 
-Quick zero dependency fingerprinting with one command. sha-assist produces algorithmic digests of certificate public keys.
+Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic digests of certificate public keys.
 
-Out of box, sha-assist exposes 5 key digests i.e. (SHA1, SHA256, SHA384, SHA512 and MD5) but can be easily extended using `hashlib.algorithms_available`.
+Out of box, sha_assist exposes 5 key digests i.e. (SHA1, SHA256, SHA384, SHA512 and MD5) but can be easily extended using `hashlib.algorithms_available`.
 
-See [Extensibility](##Extensibility)
+See [Extensibility](#Extensibility)
 
 Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching](https://gist.github.com/dlenski/fc42156c00a615f4aa18a6d19d67e208)
 
@@ -14,9 +14,9 @@ Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching
 
 ## Usage and Options
 
-`python3 sha-assist -d google.com -p 443`
+`python3 sha_assist -d google.com -p 443`
 
-Usage: sha-assist.py [OPTIONS]
+Usage: sha_assist.py [OPTIONS]
 
 | Options                   | Description                                                        |
 | ------------------------- | ------------------------------------------------------------------ |

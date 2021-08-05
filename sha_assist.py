@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import click
 import ssl
 import urllib.request
@@ -45,14 +47,21 @@ def fingerprint_checking_SSLSocket():
     return SSLSocket
 
 def stdEcho(sha1, sha256, sha384, sha512, md5 ):
-  click.echo(f"""
-     SHA-1 : {sha1}                                          
-     SHA-256 : {sha256}                                      
-     SHA-384 : {sha384}                                      
-     SHA-512 : {sha512}                                      
-     MD5 : {md5}                                             
-  """
-  )
+  # click.echo(f"""
+  #    SHA-1 : {sha1}                                          
+  #    SHA-256 : {sha256}                                      
+  #    SHA-384 : {sha384}                                      
+  #    SHA-512 : {sha512}                                      
+  #    MD5 : {md5}                                             
+  # """
+  # )
+
+  click.echo(click.style("        SHA-1 : ", fg="green") + click.style(f"{sha1}", fg="yellow"))
+  click.echo(click.style("        SHA-256 : ", fg="green") + click.style(f"{sha256}", fg="yellow"))
+  click.echo(click.style("        SHA-384 : ", fg="green") + click.style(f"{sha384}", fg="yellow"))
+  click.echo(click.style("        SHA-512 : ", fg="green") + click.style(f"{sha512}", fg="yellow"))
+  click.echo(click.style("        MD5 : ", fg="green") + click.style(f"{md5}", fg="yellow"))
+
 
 if __name__ == "__main__":
   process()
