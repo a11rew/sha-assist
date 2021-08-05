@@ -12,11 +12,11 @@ Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching
 
 ## Installation
 
-pip install sha-assist
+`git clone https://github.com/AndrewGlago/sha-assist.git && cd sha-assist`
 
 ## Usage and Options
 
-`python3 sha_assist -d google.com -p 443`
+`python3 ./sha_assist.py -d google.com -p 443`
 
 Usage: sha_assist.py [OPTIONS]
 cd
