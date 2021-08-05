@@ -1,8 +1,11 @@
 [tool.poetry]
 name = "sha-assist"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "Easy SHA1, SHA256, SHA384, SHA512 and MD5 HTTPS domain fingerprinting"
 authors = ["AndrewGlago <andrewglago1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/AndrewGlago/sha-assist"
 
 [tool.poetry.dependencies]
 python = "^3.8"

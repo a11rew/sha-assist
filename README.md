@@ -1,6 +1,6 @@
 # SHA Assistant
 
-## Easy SHA1, SHA256, SHA384, and SHA512 HTTPS domain fingerprinting\*\*.
+## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain fingerprinting\*\*.
 
 Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic digests of certificate public keys.
 
@@ -12,16 +12,18 @@ Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching
 
 ## Installation
 
+pip install sha-assist
+
 ## Usage and Options
 
 `python3 sha_assist -d google.com -p 443`
 
 Usage: sha_assist.py [OPTIONS]
-
-| Options                   | Description                                                        |
+cd
+| Options | Description |
 | ------------------------- | ------------------------------------------------------------------ |
 | -d or --domain [required] | [Text] Domain URL to be fingerprinted (eg. https://www.github.com) |
-| -p, --port [optional]     | [Integer] Port to establish connection on. Defaults to 443         |
+| -p, --port [optional] | [Integer] Port to establish connection on. Defaults to 443 |
 
 **NOTE: URL must be prefixed with https://**
 
