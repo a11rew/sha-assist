@@ -2,7 +2,7 @@
 
 ## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain fingerprinting.
 
-Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic digests of certificate public keys.
+Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic hexadecimal hashes of public keys used in TLS/SSL connections' authentication. These hashes are useful in verifying the authenticity of recieved HTTPS certificates and are essential in thwarting MiTM attacks for example.
 
 Out of the box, sha_assist exposes 5 key digests i.e. (SHA1, SHA256, SHA384, SHA512 and MD5) but can be easily extended using `hashlib.algorithms_available`.
 
