@@ -1,10 +1,10 @@
 # SHA Assistant
 
-## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain fingerprinting\*\*.
+## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain fingerprinting.
 
 Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic digests of certificate public keys.
 
-Out of box, sha_assist exposes 5 key digests i.e. (SHA1, SHA256, SHA384, SHA512 and MD5) but can be easily extended using `hashlib.algorithms_available`.
+Out of the box, sha_assist exposes 5 key digests i.e. (SHA1, SHA256, SHA384, SHA512 and MD5) but can be easily extended using `hashlib.algorithms_available`.
 
 See [Extensibility](#Extensibility)
 
