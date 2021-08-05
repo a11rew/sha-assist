@@ -19,7 +19,7 @@ Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching
 `python3 ./sha_assist.py -d google.com -p 443`
 
 Usage: sha_assist.py [OPTIONS]
-cd
+
 | Options | Description |
 | ------------------------- | ------------------------------------------------------------------ |
 | -d or --domain [required] | [Text] Domain URL to be fingerprinted (eg. https://www.github.com) |
