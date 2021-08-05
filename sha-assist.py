@@ -1,10 +1,10 @@
 import click
-import validators
 import ssl
 import urllib.request
 import sys
-import base64
 import hashlib
+
+from utils.validate import url
 
 @click.command()
 @click.option("-d", "--domain", "domain_var", required=True, help="Domain to be fingerprinted (eg. https://www.github.com)")
@@ -25,7 +25,7 @@ def process(domain_var, port_var):
   urllib.request.urlopen(r)
   
 def validateURL(domain_var):
-  if not validators.url(domain_var):
+  if not url(domain_var):
     raise click.BadArgumentUsage("Invalid HTT URL provided")
 
 def fingerprint_checking_SSLSocket():
@@ -37,12 +37,23 @@ def fingerprint_checking_SSLSocket():
             sha1 = hashlib.sha1(bcert).hexdigest()
             sha256 = hashlib.sha256(bcert).hexdigest()
             sha384 = hashlib.sha384(bcert).hexdigest()
+            sha512 = hashlib.sha512(bcert).hexdigest()
+            md5 = hashlib.md5(bcert).hexdigest()
 
-            print(sha1)
-            print(sha256)
-           
+            stdEcho(sha1, sha256, sha384, sha512, md5)
 
     return SSLSocket
 
+def stdEcho(sha1, sha256, sha384, sha512, md5 ):
+  click.echo(f"""
+     SHA-1 : {sha1}                                          
+     SHA-256 : {sha256}                                      
+     SHA-384 : {sha384}                                      
+     SHA-512 : {sha512}                                      
+     MD5 : {md5}                                             
+  """
+  )
+
 if __name__ == "__main__":
   process()
+  exit()
