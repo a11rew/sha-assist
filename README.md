@@ -18,6 +18,9 @@ Credit to [dlenski](https://gist.github.com/dlenski) for [ssl.SSLSocket patching
 
 `python3 ./sha_assist.py -d google.com -p 443`
 
+![git](https://user-images.githubusercontent.com/87580113/128281173-12ab0604-2711-4633-b66c-81067d876e49.png)
+
+
 Usage: sha_assist.py [OPTIONS]
 
 | Options | Description |
