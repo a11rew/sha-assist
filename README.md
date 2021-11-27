@@ -1,6 +1,6 @@
-# SHA Assistant
+# 🕵️ SHA Assist
 
-## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain fingerprinting.
+## Easy SHA1, SHA256, SHA384, SHA512, MD5 HTTPS domain certificate fingerprinting.
 
 Quick zero dependency fingerprinting with one command. sha_assist produces algorithmic hexadecimal hashes of public keys used in TLS/SSL connections' authentication. These hashes are useful in verifying the authenticity of recieved HTTPS certificates and are essential in thwarting MiTM attacks for example.
 
